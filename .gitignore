@@ -5,4 +5,5 @@ __pycache__
 .hypothesis/
 build/
 reports/
-simple_storage_js/node_modules/
+node_modules
+*.log
