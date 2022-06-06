@@ -10,10 +10,11 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
     let ethUsdPriceFeedAddress
     if (chainId == 31337) {
+        console.log("@@@@@@@@@@@@@", chainId)
         const ethUsdAggregator = await deployments.get("MockV3Aggregator")
         ethUsdPriceFeedAddress = ethUsdAggregator.address
     } else {
-        console.log("@@@@@@@@@@@@@", process.env.ETHERSCAN_API_KEY)
+        // console.log("@@@@@@@@@@@@@", process.env.ETHERSCAN_API_KEY)
         ethUsdPriceFeedAddress = networkConfig[chainId]['ethUsdPriceFeed'];
     }
     log("----------------------------------------------------")

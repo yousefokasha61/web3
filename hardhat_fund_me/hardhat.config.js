@@ -13,8 +13,8 @@ require("hardhat-deploy");
  * @type import('hardhat/config').HardhatUserConfig
  */
 
-const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL || "https://eth-rinkeby.alchemyapi.io/v2/V0rMcrgdE8ztWLmhY01ySOtGlZQ1UR4T";
-const PRIVATE_KEY = process.env.PRIVATE_KEY || "0x4452f5f619926350177638776503f78a77d8a1d71c0b8324e993ed2d0637911c";
+const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL;
+const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 
 module.exports = {
